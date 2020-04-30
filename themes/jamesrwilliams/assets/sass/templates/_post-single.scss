@@ -3,7 +3,7 @@
 	&-content {
 		padding: 2rem 1rem;
 		font-size: 20px;
-		color: $text-color;
+		color: inherit;
 		line-height: 32px;
 		margin-bottom: 1.5em;
 		font-family: $bodyFonts;
@@ -36,6 +36,11 @@
 			-moz-hyphens: auto;
 			-webkit-hyphens: auto;
 			hyphens: auto;
+
+			@media (prefers-color-scheme: dark) {
+				color: white;
+			}
+
 		}
 
 		h1,
@@ -44,7 +49,7 @@
 		h4,
 		h5,
 		h6 {
-			color: $text-color;
+			color: inherit;
 			padding-bottom: 10px;
 			padding-top: 10px;
 			margin-top: 3rem;

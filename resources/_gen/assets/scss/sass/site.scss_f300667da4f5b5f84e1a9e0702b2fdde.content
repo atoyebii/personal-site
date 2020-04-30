@@ -359,6 +359,26 @@ article.content {
     padding-bottom: 0;
     margin-bottom: 0; }
 
+header {
+  background: #fff;
+  color: #303538;
+  padding-top: 100px; }
+  header:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin-top: 2rem;
+    background: transparent; }
+  @media (prefers-color-scheme: dark) {
+    header {
+      background: #303538;
+      color: #fff; }
+      header:after {
+        background: #00F260;
+        background: -webkit-linear-gradient(to left, #095B8D, #00F260);
+        background: linear-gradient(to left, #095B8D, #00F260); } }
+
 main {
   width: 100%;
   position: relative;
@@ -373,16 +393,10 @@ main {
 
 article > header,
 section > header {
-  background: #fff;
-  padding-top: 4rem;
   transition: padding 1s ease; }
-  @media screen and (min-width: 500px) {
-    article > header,
-    section > header {
-      padding-top: 200px; } }
   article > header h1,
   section > header h1 {
-    color: #303538;
+    color: inherit;
     -webkit-font-smoothing: antialiased;
     font-weight: bold;
     font-size: 2.2rem;
@@ -417,7 +431,7 @@ section > header {
 .post-content {
   padding: 2rem 1rem;
   font-size: 20px;
-  color: #303538;
+  color: inherit;
   line-height: 32px;
   margin-bottom: 1.5em;
   font-family: "Georgia", serif; }
@@ -442,13 +456,16 @@ section > header {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (prefers-color-scheme: dark) {
+      .post-content a {
+        color: white; } }
   .post-content h1,
   .post-content h2,
   .post-content h3,
   .post-content h4,
   .post-content h5,
   .post-content h6 {
-    color: #303538;
+    color: inherit;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-top: 3rem;
@@ -581,22 +598,12 @@ main.error404 {
   line-height: 1.4em; }
 
 .hero {
-  background: #303538;
   padding-top: 150px; }
   @media screen and (min-width: 500px) {
     .hero {
-      padding-top: 350px; } }
-  .hero:after {
-    content: '';
-    display: block;
-    height: 4px;
-    width: 100%;
-    margin-top: 2rem;
-    background: #00F260;
-    background: -webkit-linear-gradient(to left, #095B8D, #00F260);
-    background: linear-gradient(to left, #095B8D, #00F260); }
+      padding-top: 45vh; } }
   .hero h1 {
-    color: #fff;
+    color: inherit;
     padding: 0 2rem;
     font-size: 2rem;
     margin: 0;
@@ -742,6 +749,10 @@ aside {
   top: 0;
   z-index: 1000;
   box-shadow: 2px 2px 5px #0002; }
+  @media (prefers-color-scheme: dark) {
+    aside {
+      background: #24282a;
+      color: #fff; } }
   aside nav {
     display: flex;
     flex-direction: row;
@@ -767,22 +778,16 @@ aside {
       display: flex;
       justify-content: center;
       flex-direction: column; }
-      aside ul li.divider {
-        background: #eee;
-        width: 1px;
-        margin: 0 5px; }
-      aside ul li svg {
-        width: 17px;
-        margin: 0;
-        fill: #303538;
-        transition: fill 1s ease; }
       aside ul li:last-child a {
         padding-right: 0; }
       aside ul li a {
-        color: #444;
+        color: inherit;
         text-decoration: none;
         font-size: 14px;
         padding: 0 .5rem; }
+        aside ul li a:hover {
+          color: white;
+          text-decoration: underline; }
 
 .site-profile {
   vertical-align: middle;
@@ -790,7 +795,10 @@ aside {
   flex-direction: row;
   font-size: 14px;
   text-decoration: none;
-  color: #000; }
+  color: #303538; }
+  @media (prefers-color-scheme: dark) {
+    .site-profile {
+      color: #fff; } }
   .site-profile span {
     display: inline-block;
     padding: .5rem; }
@@ -810,7 +818,6 @@ aside {
     flex-grow: 1;
     opacity: 1;
     overflow: hidden;
-    background: white;
     color: #383d41; }
 
 code {
@@ -923,11 +930,29 @@ table {
 footer {
   color: #303538;
   font-size: 14px;
-  opacity: .7;
-  background: #fff;
-  text-align: center; }
+  background: #fff; }
+  @media (prefers-color-scheme: dark) {
+    footer {
+      background: #181b1d;
+      color: #fff; } }
   footer nav {
     padding: 2rem; }
+  footer ul li {
+    display: inline-block; }
+    footer ul li a {
+      display: inline-block; }
+    footer ul li span {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px; }
+  footer svg {
+    width: 17px;
+    margin: 5px 0 0;
+    fill: #303538;
+    transition: fill 1s ease; }
+    @media (prefers-color-scheme: dark) {
+      footer svg {
+        fill: #fff; } }
   footer ul {
     list-style: none;
     margin: 0;

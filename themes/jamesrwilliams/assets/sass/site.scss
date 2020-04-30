@@ -42,6 +42,31 @@ article.content {
 	}
 }
 
+header {
+	background: #fff;
+	color: $text-color;
+	padding-top: 100px;
+
+	&:after {
+		content: '';
+		display: block;
+		height: 4px;
+		width: 100%;
+		margin-top: 2rem;
+		background: transparent;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background: $text-color;
+		color: #fff;
+		&:after {
+			background: #00F260;
+			background: -webkit-linear-gradient(to left, $primary, #00F260);
+			background: linear-gradient(to left, $primary, #00F260);
+		}
+	}
+}
+
 main {
 	width: 100%;
 	position: relative;
@@ -60,16 +85,10 @@ main {
 
 article > header,
 section > header {
-	background: #fff;
-	padding-top: 4rem;
 	transition: padding 1s ease;
 
-	@media screen and (min-width: $breakpoint_sm) {
-		padding-top: 200px;
-	}
-
 	h1 {
-		color: $text-color;
+		color: inherit;
 		-webkit-font-smoothing: antialiased;
 		font-weight: bold;
 		font-size: 2.2rem;

@@ -1,25 +1,12 @@
 .hero {
-	background: $text-color;
 	padding-top: 150px;
 
-
 	@media screen and (min-width: $breakpoint_sm) {
-		padding-top: 350px;
-	}
-
-	&:after {
-		content: '';
-		display: block;
-		height: 4px;
-		width: 100%;
-		margin-top: 2rem;
-		background: #00F260;
-		background: -webkit-linear-gradient(to left, $primary, #00F260);
-		background: linear-gradient(to left, $primary, #00F260);
+		padding-top: 45vh;
 	}
 
 	h1 {
-		color: #fff;
+		color: inherit;
 		padding: 0 2rem;
 		font-size: 2rem;
 		margin: 0;
