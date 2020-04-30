@@ -1,13 +1,11 @@
 aside {
-	$border-width: 7px;
-	padding: $border-width 0 0 0;
 	transition: all .4s ease;
-	border-bottom: 1px solid transparent;
 	background: $sidebar-color;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 1000;
+	box-shadow: 2px 2px 5px #0002;
 
 	nav {
 		display: flex;
@@ -17,18 +15,6 @@ aside {
 		margin: 0 auto;
 		padding: .5rem 1rem;
 		align-content: center;
-	}
-
-	&:before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 100%;
-		top: 0;
-		height: $border-width;
-		background: #00F260;
-		background: -webkit-linear-gradient(to right, $primary, #00F260);
-		background: linear-gradient(to right, $primary, #00F260);
 	}
 
 	.spacer {

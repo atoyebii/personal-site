@@ -1,6 +1,21 @@
 .post-header {
-	color: $text-color;
-	border-bottom: 1px solid rgba(#000, 0.05);
+	color: #fff;
+	background: $text-color;
+	//border-bottom: 1px solid rgba(#000, 0.05);
+
+	&:after {
+		content: '';
+		display: block;
+		height: 4px;
+		width: 100%;
+		background: #00F260;
+		background: -webkit-linear-gradient(to left, $primary, #00F260);
+		background: linear-gradient(to left, $primary, #00F260);
+	}
+
+	h1 {
+		color: white;
+	}
 
 	&-inner {
 		padding: 2rem 1rem;

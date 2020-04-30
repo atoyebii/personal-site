@@ -10,6 +10,7 @@
 .translucent { opacity: .5; }
 
 .draft {
-	opacity: .4;
+	opacity: .7;
+	border-right: 5px solid red;
 	background: rgba(#f00, 0.1);
 }
