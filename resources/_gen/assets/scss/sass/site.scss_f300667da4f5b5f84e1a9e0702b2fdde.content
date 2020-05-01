@@ -659,6 +659,9 @@ template {
   padding-top: 5rem;
   padding-bottom: 5rem; }
 
+.list-none {
+  list-style-type: none; }
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -1266,10 +1269,7 @@ footer {
     footer {
       background: #181b1d;
       color: #fff; } }
-  footer ul li a {
-    display: inline-block; }
-  footer ul li span {
-    display: inline-block;
+  footer span {
     height: 30px;
     line-height: 30px; }
   footer svg {
@@ -1280,10 +1280,6 @@ footer {
     @media (prefers-color-scheme: dark) {
       footer svg {
         fill: #fff; } }
-  footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
 
 img {
   max-width: 100%;
