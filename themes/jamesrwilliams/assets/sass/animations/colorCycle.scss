@@ -1,0 +1,14 @@
+@keyframes colorCycle {
+	0% {
+		color: $gradient_end;
+	}
+
+	100% {
+		color: $gradient_start;
+	}
+}
+
+#animated span {
+	transition: color 1s ease-in;
+	cursor: pointer;
+}

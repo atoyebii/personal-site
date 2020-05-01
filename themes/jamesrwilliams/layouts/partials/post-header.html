@@ -1,6 +1,6 @@
 <header class="post-header">
 	<div class="container">
-		<div class="post-header-inner">
+		<div class="post-header-inner px-4 py-8">
 			<h1>{{ .Title }}</h1>
 			<div class="meta">
 				{{ $publish_date := .PublishDate.Format "2 January, 2006" }}
@@ -21,7 +21,7 @@
 					<span>Tagged</span>
 					<ul>
 						{{ range $index, $name := sort .Params.tag -}}
-						<li><a class=ph1 href={{ (printf "/tags/%s/" $name) | urlize }} title="Index: {{$name | markdownify }}">{{$name | markdownify}}</a></li>
+						<li><a class="ph1" href={{ (printf "/tags/%s/" $name) | urlize }} title="Index: {{$name | markdownify }}">{{$name | markdownify}}</a></li>
 						{{- end}}
 					</ul>
 				</div>

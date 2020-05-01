@@ -1,7 +1,6 @@
 .post-header {
 	color: #fff;
 	background: $text-color;
-	//border-bottom: 1px solid rgba(#000, 0.05);
 
 	&:after {
 		content: '';
@@ -13,13 +12,7 @@
 		background: linear-gradient(to left, $primary, #00F260);
 	}
 
-	h1 {
-		color: white;
-	}
-
 	&-inner {
-		padding: 2rem 1rem;
-
 		@media screen and (min-width: $breakpoint_sm) {
 			padding: 2rem;
 		}
@@ -38,25 +31,6 @@
 	.meta {
 		font-size: 16px;
 		line-height: 1.4rem;
-
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-
-			li {
-
-				display: inline-block;
-				margin-right: 5px;
-
-				&:not(:last-child) {
-					&:after {
-						content: ','
-					}
-				}
-
-			}
-		}
 
 		.published,
 		.updated,
