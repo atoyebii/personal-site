@@ -870,6 +870,10 @@ article.content {
       .highlight pre {
         padding: 2rem; } }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .post-content {
   padding: 2rem 1rem;
   font-size: 20px;
@@ -1251,14 +1255,33 @@ figure {
 
 ul,
 ol {
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  font-family: sans-serif;
+  font-size: 80%;
+  line-height: 1.5em;
+  padding-left: 1rem; }
 
 table {
   border-collapse: collapse;
-  margin-bottom: 1.5rem; }
-  table th, table td {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 5px; }
+  margin-bottom: 1.5rem;
+  width: 100%;
+  font-size: 75%;
+  font-family: sans-serif;
+  line-height: 1;
+  border-radius: 5px; }
+
+thead {
+  background: #333;
+  color: white;
+  font-weight: 400; }
+
+th, td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: .8em .8em .5em; }
+
+th {
+  text-align: left;
+  font-weight: normal; }
 
 .footnotes {
   font-size: 14px; }
@@ -1291,16 +1314,3 @@ footer {
     @media (prefers-color-scheme: dark) {
       footer svg {
         fill: #fff; } }
-
-img {
-  max-width: 100%;
-  height: auto; }
-  @media (prefers-color-scheme: dark) {
-    img {
-      opacity: .75;
-      transition: opacity .5s ease-in-out; }
-      img:hover {
-        opacity: 1; } }
-
-.social li a {
-  max-width: 50px; }

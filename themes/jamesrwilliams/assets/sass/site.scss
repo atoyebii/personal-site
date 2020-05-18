@@ -135,6 +135,11 @@ article.content {
 	}
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @import 'templates/post-single';
 @import 'templates/post_list';
 
@@ -146,22 +151,3 @@ article.content {
 @import 'partials/navigation';
 @import 'partials/typography';
 @import 'partials/footer';
-
-img {
-	max-width: 100%;
-	height: auto;
-
-	@media (prefers-color-scheme: dark) {
-		opacity: .75;
-		transition: opacity .5s ease-in-out;
-		&:hover {
-			opacity: 1;
-		}
-	}
-}
-
-.social {
-	li a {
-		max-width: 50px;
-	}
-}
