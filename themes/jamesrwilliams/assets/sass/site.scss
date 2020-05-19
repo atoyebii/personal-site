@@ -22,22 +22,12 @@ body {
 	flex-direction: column;
 	flex-basis: 70px;
 	font-size: 16px;
-	background: #021526;
+	background: $primary;
 }
 
 header {
-	background: #021526;
 	color: #fff;
-	padding-top: 100px;
-
-	&:after {
-		content: '';
-		display: block;
-		height: 4px;
-		width: 100%;
-		margin-top: 2rem;
-	}
-
+	background: $primary;
 
 	&:after {
 		content: '';
@@ -125,7 +115,6 @@ main {
 
 article > header,
 section > header {
-	transition: padding 1s ease;
 
 	h1 {
 		color: inherit;
@@ -163,13 +152,11 @@ article.content {
 	margin: 0 auto;
 }
 
-// Syntax Highlighting Block
 .highlight {
-	width: 100%;
 	transition: all .7s ease;
 	position: relative;
 	overflow: hidden;
-	line-height: 1.1em;
+	line-height: 1em;
 
 	pre {
 		padding: 1rem;
@@ -190,7 +177,6 @@ img {
 }
 
 @import 'templates/post-single';
-@import 'templates/post_list';
 
 @import 'shortcodes/alert';
 @import 'shortcodes/search';

@@ -28,7 +28,7 @@
 	animation-iteration-count: infinite;
 }
 
-.inline-block { display: inline-block; }
+
 
 /* Tailwind based component CSS */
 .m-0  { margin: 0; }
@@ -172,3 +172,10 @@
 .no-underline { text-decoration: none; }
 
 .text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.text-red { color: red; }
+
+.font-bold { font-weight: 700; }
+
+.inline-block { display: inline-block; }

@@ -1,11 +1,11 @@
 {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
 
-<div class="post-links container">
+<div class="container text-center">
 	{{ if .Paginator.HasPrev }}
-	<a class="post-link post-link-prev" href="{{ .Paginator.Prev.URL | relLangURL }}">Previous</a>
+	<a class="p-8 font-bold no-underline inline-block post-link post-link-prev" href="{{ .Paginator.Prev.URL | relLangURL }}">&larr; Newer</a>
 	{{ end }}
 	{{ if .Paginator.HasNext }}
-	<a class="post-link post-link-next" href="{{ .Paginator.Next.URL | relLangURL }}">Next</a>
+	<a class="p-8 font-bold no-underline inline-block post-link post-link-next" href="{{ .Paginator.Next.URL | relLangURL }}">Older &rarr;</a>
 	{{ end }}
 </div>
 

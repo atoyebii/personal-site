@@ -3,17 +3,17 @@
 	<header>
 		<div class="container px-16">
 			<div class="post-list-header">
-				<h1>{{ humanize .Type }}</h1>
+				<h1 class="m-0 py-16">{{ humanize .Type }}</h1>
 			</div>
 		</div>
 	</header>
 	<div class="container px-16">
 		{{ $paginator := .Paginate (where .Pages "Type" .Type) }}
-		<ul class="item-list p-0 m-0" data-type="{{ .Type }}">
+		<ol class="item-list list-none p-0 m-0" data-type="{{ .Type }}">
 		{{ range $paginator.Pages }}
-			<li>{{ partial "post-inline.html" . }}</li>
+			<li class="pb-0">{{ partial "post-inline.html" . }}</li>
 		{{ end }}
-		</ul>
+		</ol>
 		{{ partial "list-pagination.html" . }}
 	</div>
 </section>
