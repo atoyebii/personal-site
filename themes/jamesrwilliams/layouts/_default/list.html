@@ -1,15 +1,15 @@
 {{ define "main" }}
 <section class="post-list">
 	<header>
-		<div class="container">
+		<div class="container px-16">
 			<div class="post-list-header">
 				<h1>{{ humanize .Type }}</h1>
 			</div>
 		</div>
 	</header>
-	<div class="container">
+	<div class="container px-16">
 		{{ $paginator := .Paginate (where .Pages "Type" .Type) }}
-		<ul class="item-list" data-type="{{ .Type }}">
+		<ul class="item-list p-0 m-0" data-type="{{ .Type }}">
 		{{ range $paginator.Pages }}
 			<li>{{ partial "post-inline.html" . }}</li>
 		{{ end }}

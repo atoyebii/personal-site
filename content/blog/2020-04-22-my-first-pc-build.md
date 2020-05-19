@@ -20,10 +20,11 @@ Just before all this COVID-19 imposed lifestyle choices, and after talking about
 | Storage (HDD) | Seagate Barracuda Compute 2TB |
 
 ### Peripherals
-- LG 34" UltraWide Monitor (34UM69G-B)
-- Razer Cynosa Chroma Keyboard
-- Rzer Deathadder Essential Mouse
-- Dell 6000 USB C Dock for hooking up my Macbook Pro to my monitor + charging and USB hub. 
+
+I picked up an LG 34" UltraWide Monitor (34UM69G-B) shortly after retiring my iMac. It's a great monitor, this is the non-curved one. 
+Currently, have the Dell dock hooked up via HDMI to the monitor with the PC running off the DisplayPort connection, allowing me to switch between inputs using the monitor controls.
+
+For PC input I'm using a Razer Cynosa Chroma Keyboard, and a Razer Deathadder Essential Mouse, you know to make me better at GTA V.
 
 ## Benchmarks
 
@@ -36,4 +37,4 @@ I ran 3DMark's benchmarks initially a week or so after building, In the meantime
 
 ## Next Upgrades
 
-Probably not wise that I'm overclocking with a stock CPU cooler so I'll be looking into an after market one soon. I've been looking at some all-in-one liquid coolers, but these might be a little overkill for my current setup and usage. But CPU / cooling is the next thing I need to improve. 
+Probably not wise that I'm overclocking with the stock AMD Wraith Stealth cooler. I'll be looking into an after market one soon. I've been looking at some all-in-one liquid coolers, but these might be a little overkill for my current setup and usage. But CPU / cooling is the next thing I need to improve. 

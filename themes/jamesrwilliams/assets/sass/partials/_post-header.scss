@@ -1,27 +1,5 @@
 .post-header {
 	color: #fff;
-	background: $text-color;
-
-	&:after {
-		content: '';
-		display: block;
-		height: 4px;
-		width: 100%;
-		background: #00F260;
-		background: -webkit-linear-gradient(to left, $primary, #00F260);
-		background: linear-gradient(to left, $primary, #00F260);
-	}
-
-	&-inner {
-		@media screen and (min-width: $breakpoint_sm) {
-			padding: 2rem;
-		}
-	}
-
-	.container {
-		position: relative;
-		z-index: 300;
-	}
 
 	a {
 		text-decoration: none;

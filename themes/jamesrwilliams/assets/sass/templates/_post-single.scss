@@ -1,16 +1,12 @@
 .post {
 
 	&-content {
-		padding: 2rem 1rem;
 		font-size: 20px;
 		color: inherit;
 		line-height: 32px;
 		margin-bottom: 1.5em;
 		font-family: $bodyFonts;
-
-		@media screen and (min-width: $breakpoint_sm) {
-			padding: 2rem;
-		}
+		max-width: 960px;
 
 		p {
 			margin-bottom: 1.5em;
@@ -59,6 +55,7 @@
 				.hlink {
 					opacity: 1;
 					color: $accent;
+					font-weight: 200;
 				}
 			}
 
@@ -76,7 +73,11 @@
 				font-weight: lighter;
 				transform: translate(-100%);
 				transition: opacity .4s ease;
-				opacity: .55;
+				opacity: .1;
+
+				&:hover {
+					opacity: .5;
+				}
 			}
 
 			&[id] {

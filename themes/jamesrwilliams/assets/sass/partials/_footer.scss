@@ -1,12 +1,8 @@
 footer {
-	color: $text-color;
 	font-size: 14px;
-	background: #fff;
-
-	@media (prefers-color-scheme: dark) {
-		background: darken($text-color, 10%);
-		color: #fff;
-	}
+	background: #021526;
+	color: #fff;
+	padding: 50px;
 
 	span {
 		height: 30px;
@@ -23,4 +19,12 @@ footer {
 			fill: #fff;
 		}
 	}
+}
+
+.homepage footer {
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 400;
 }
