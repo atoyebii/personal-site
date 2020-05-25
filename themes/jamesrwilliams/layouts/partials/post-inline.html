@@ -1,4 +1,6 @@
-<article class="post-inline {{ if .Draft }}draft{{ end }}">
+<article class="post-inline py-4  {{ if .Draft }}draft{{ end }}">
 	{{ partial "json-ld/blog-post" . }}
-	<h2><a href="{{ .RelPermalink }}"><time class="mr-1" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "1 Jan, 2006" }}</time> {{ .Title }}</a></h2>
+	<h2 class="m-0 block">
+		<a href="{{ .RelPermalink }}"><time class="inline-block mr-1" datetime='{{ .PublishDate.Format "2006-01-02" }}'>{{ .PublishDate.Format "1 Jan, 2006" }}</time> {{ .Title }}</a>
+	</h2>
 </article>

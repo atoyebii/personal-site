@@ -323,13 +323,15 @@ template {
 .draft:after {
   content: 'DRAFT';
   font-size: 12px;
-  background: yellow;
-  padding: 1px 6px;
+  background: #D9D9D9;
+  color: #A7A8A9;
+  padding: 3px 6px;
+  border-radius: 4px;
   line-height: 14px;
   font-weight: bold;
   display: inline-block;
   margin-top: -1px;
-  font-style: italic; }
+  margin-left: 5px; }
 
 .accent {
   color: #00F260;
@@ -784,6 +786,9 @@ template {
 .inline-block {
   display: inline-block; }
 
+.block {
+  display: block; }
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -828,7 +833,7 @@ header {
   box-shadow: -2px -2px 5px #0002; }
 
 .triangle-1 {
-  width: 500px;
+  width: 60vw;
   top: 0;
   right: 0;
   opacity: 1;
@@ -836,6 +841,9 @@ header {
   background: #031D35;
   transform-origin: top left;
   z-index: 310; }
+  @media screen and (min-width: 500px) {
+    .triangle-1 {
+      width: 500px; } }
 
 .triangle-2 {
   top: 0;
@@ -862,6 +870,9 @@ header {
 
 .homepage main {
   overflow: hidden; }
+
+.homepage aside.container {
+  max-width: none; }
 
 main {
   width: 100%;
@@ -1027,21 +1038,6 @@ img {
     .post-footer {
       margin-top: 100px; } }
 
-.alert {
-  position: relative;
-  padding: .75rem 1.25rem;
-  margin-bottom: 1rem;
-  font-size: 16px;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  border-top-right-radius: 0;
-  margin-top: -18px;
-  margin-left: -5%;
-  border-top-left-radius: 0;
-  color: #383d41;
-  background-color: #e2e3e5;
-  border-color: #d6d8db; }
-
 .post-header {
   color: #fff; }
   .post-header a {
@@ -1073,20 +1069,11 @@ img {
         font-weight: 600; }
 
 article.post-inline {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem 0; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   article.post-inline h2,
   article.post-inline time {
     font-size: 16px;
     color: #484f53; }
-  article.post-inline time {
-    display: block;
-    margin-bottom: .5rem; }
-    @media screen and (min-width: 500px) {
-      article.post-inline time {
-        min-width: 100px;
-        margin-bottom: 0;
-        display: inline-block; } }
   article.post-inline h2 {
     margin: 0;
     display: inline-block; }
@@ -1145,15 +1132,14 @@ aside {
   @media (prefers-color-scheme: dark) {
     .site-profile {
       color: #fff; } }
-  .site-profile span {
-    display: inline-block;
-    padding: .5rem; }
-  .site-profile > div {
-    display: none;
+  .site-profile > span {
     justify-content: center;
     flex-direction: column; }
+    .site-profile > span:hover {
+      text-decoration: underline;
+      color: white; }
     @media screen and (min-width: 500px) {
-      .site-profile > div {
+      .site-profile > span {
         display: flex; } }
   .site-profile img {
     display: inline-block;
