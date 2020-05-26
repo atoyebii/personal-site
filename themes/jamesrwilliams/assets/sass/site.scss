@@ -158,6 +158,13 @@ article.content {
 	max-width: 1440px;
 	transition: width 1s ease;
 	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	@media screen and ($breakpoint_md) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
 }
 
 .highlight {

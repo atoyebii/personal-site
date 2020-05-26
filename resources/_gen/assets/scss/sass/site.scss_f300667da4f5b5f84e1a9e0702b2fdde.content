@@ -912,7 +912,13 @@ article.content {
 .container {
   max-width: 1440px;
   transition: width 1s ease;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  @media screen and (660px) {
+    .container {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
 
 .highlight {
   transition: all .7s ease;
